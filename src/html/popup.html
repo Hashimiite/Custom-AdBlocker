@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AdBlocker Pro</title>
+    <link rel="stylesheet" href="../css/popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AdBlocker Pro</h1>
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="enableToggle" checked>
+                    <span class="slider"></span>
+                </label>
+                <span id="statusText">Enabled</span>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">Ads Blocked Today:</span>
+                <span class="stat-value" id="todayCount">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Total Ads Blocked:</span>
+                <span class="stat-value" id="totalCount">0</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="whitelistBtn">Whitelist This Site</button>
+            <button id="settingsBtn">Settings</button>
+        </div>
+    </div>
+    <script src="../js/popup.js"></script>
+</body>
+</html>
