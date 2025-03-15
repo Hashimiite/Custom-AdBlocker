@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         'Add to Whitelist';
     }
   
-    // Event Listeners
     enableToggle.addEventListener('change', async (e) => {
       const enabled = e.target.checked;
       await chrome.runtime.sendMessage({ 
@@ -76,6 +75,5 @@ document.addEventListener('DOMContentLoaded', async () => {
       chrome.runtime.openOptionsPage();
     });
   
-    // Initialize popup
     init();
   });
